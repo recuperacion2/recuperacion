@@ -34,10 +34,10 @@ export const crearPc = async(req, res) => {
     }
 };
 export const modificarPc = async(req, res) => {
-    const id = req.params.id
-    const marca = req.body.marca
-    const almacenamiento = req.body.almacenamiento
-    const ram = req.body.ram
+    const id = req.params.id;
+    const marca = req.body.marca;
+    const almacenamiento = req.body.almacenamiento;
+    const ram = req.body.ram;
 
     try {
         const rest = await pool.query(`call SP_EDITAR(${id}, '${ram}', '${almacenamiento}', '${marca}');`);
