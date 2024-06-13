@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-06-2024 a las 15:51:08
+-- Tiempo de generación: 13-06-2024 a las 16:28:32
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -32,7 +32,7 @@ VALUES (_marca, _almacenamiento, _ram);
 
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_EDITAR` (IN `_ID` INT(10), IN `_ram` INT(2), IN `_almacenamiento` INT(4), IN `_marca` INT(10))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SP_EDITAR` (IN `_id` INT(10), IN `_ram` INT(2), IN `_almacenamiento` INT(4), IN `_marca` INT(10))   BEGIN
 
 UPDATE computador
 SET marca = _marca, 
@@ -82,7 +82,7 @@ CREATE TABLE `computador` (
 INSERT INTO `computador` (`id`, `marca`, `almacenamiento`, `ram`) VALUES
 (1, 'ASUS', 256, 8),
 (2, 'HP', 1000, 16),
-(4, 'DELL', 256, 16);
+(7, 'DELL', 256, 16);
 
 --
 -- Índices para tablas volcadas
@@ -102,7 +102,7 @@ ALTER TABLE `computador`
 -- AUTO_INCREMENT de la tabla `computador`
 --
 ALTER TABLE `computador`
-  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

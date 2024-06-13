@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "recuperacion 2",
     "collectionId": "f536ee20-5677-4668-8b9e-ecd588344975",
-    "dateExported": "2024-06-13T13:51:50.129Z",
+    "dateExported": "2024-06-13T14:28:57.250Z",
     "version": "1.2",
     "folders": [],
     "requests": [
@@ -39,11 +39,11 @@
             "method": "POST",
             "sortNum": 30000,
             "created": "2024-06-13T12:32:42.002Z",
-            "modified": "2024-06-13T13:27:57.121Z",
+            "modified": "2024-06-13T14:05:48.600Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"marca\": \"DELL\",\n  \"almacenamiento\": 256,\n  \"ram\": 16\n}",
+                "raw": "{\n  \"marca\": \"szs\",\n  \"almacenamiento\": 123,\n  \"ram\": 21\n}",
                 "form": []
             }
         },
@@ -52,15 +52,15 @@
             "colId": "f536ee20-5677-4668-8b9e-ecd588344975",
             "containerId": "",
             "name": "MODIFICAR",
-            "url": "localhost:3000/api/pc",
+            "url": "localhost:3000/api/pc/2",
             "method": "PUT",
             "sortNum": 40000,
             "created": "2024-06-13T12:33:02.953Z",
-            "modified": "2024-06-13T13:47:34.733Z",
+            "modified": "2024-06-13T14:27:34.744Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"id\": 4,\n  \"marca\": \"DELL\",\n  \"almacenamiento\": 256,\n  \"ram\": 8\n}",
+                "raw": "{\n\n  \n  \"ram\": 8,\n  \"almacenamiento\": 256,\n  \"marca\": \"DELL\"\n}",
                 "form": []
             }
         },
@@ -69,18 +69,13 @@
             "colId": "f536ee20-5677-4668-8b9e-ecd588344975",
             "containerId": "",
             "name": "ELIMINAR",
-            "url": "localhost:3000/api/pc",
+            "url": "localhost:3000/api/pc/6",
             "method": "DELETE",
             "sortNum": 60000,
             "created": "2024-06-13T12:34:18.391Z",
-            "modified": "2024-06-13T13:48:32.264Z",
-            "headers": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n  \"id\": 4\n}",
-                "form": []
-            }
+            "modified": "2024-06-13T14:23:37.019Z",
+            "headers": []
         }
     ],
-    "ref": "gBzpRPl2LuKnrwJr152f-5-fwl7fROWj_DM5Hgtex2MEfP3GmUZNIyl7NqoYt9pPuBBNAfaK7p43P7sPlBgDrg"
+    "ref": "gBzpRPl2LuKnrwJr152f-5-fwl7fROWj_DM5Hgtex2MazOPmQDtA1hU_-AfZoTi82-gF7uqVLen945BFB-VfmA"
 }

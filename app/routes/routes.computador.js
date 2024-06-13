@@ -6,8 +6,8 @@ const rutaComputador = Router();
 rutaComputador.get("/pc", mostrarPc);
 rutaComputador.get("/pc/:id", listarPc);
 rutaComputador.post("/pc", crearPc);
-rutaComputador.put("/pc", modificarPc);
-rutaComputador.delete("/pc", eliminarPc);
+rutaComputador.put("/pc/:id", modificarPc);
+rutaComputador.delete("/pc/:id", eliminarPc);
 
 
 
