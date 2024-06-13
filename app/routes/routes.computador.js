@@ -1,22 +1,13 @@
 import { Router } from "express";
+import { crearPc, eliminarPc, listarPc, modificarPc, mostrarPc } from "../controllers/controller.computador";
 
 const rutaComputador = Router();
 
-rutaComputador.get("/pc", () => {
-    console.log("get");
-});
-rutaComputador.get("/pc", () => {
-    console.log("get");
-});
-rutaComputador.post("/pc", () => {
-    console.log("get");
-});
-rutaComputador.put("/pc", () => {
-    console.log("get");
-});
-rutaComputador.delete("/pc", () => {
-    console.log("get");
-});
+rutaComputador.get("/pc", mostrarPc);
+rutaComputador.get("/pc", listarPc);
+rutaComputador.post("/pc", crearPc);
+rutaComputador.put("/pc", modificarPc);
+rutaComputador.delete("/pc", eliminarPc);
 
 
 
