@@ -4,11 +4,11 @@ import { crearPc, eliminarPc, listarPc, modificarPc, mostrarPc } from "../contro
 const rutaComputador = Router();
 
 rutaComputador.get("/pc", mostrarPc);
-rutaComputador.get("/pc", listarPc);
+rutaComputador.get("/pc/:id", listarPc);
 rutaComputador.post("/pc", crearPc);
 rutaComputador.put("/pc", modificarPc);
 rutaComputador.delete("/pc", eliminarPc);
 
 
 
-export default rutaComputador
+export default rutaComputador;
